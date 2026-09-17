@@ -114,3 +114,5 @@ dist
 
 # Large files
 public/songs/CNY2026AlbumMandarin.mp3
+.vercel
+.env*

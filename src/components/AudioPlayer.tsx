@@ -59,7 +59,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     setPreviewEnded(false);
     setProgress(0);
     setDuration(currentSong?.duration || 0);
-  }, [currentSong?.id]);
+  }, [currentSong]);
 
   const isLocal = currentSong?.id.startsWith('local-');
   const limit = (isLocal || isPurchased) ? duration : PREVIEW_LIMIT;
