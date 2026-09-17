@@ -351,6 +351,7 @@ function App() {
            setCurrentSong(prevSong);
            setIsPlaying(true);
         }}
+        onBuy={(song) => handleAddToCart(song, 'song')}
       />
 
       <Cart
@@ -372,7 +373,17 @@ function App() {
         isOpen={isDownloadOpen}
         onClose={() => setIsDownloadOpen(false)}
         purchasedItems={purchasedItems}
+        allSongs={songs}
       />
+
+      {/* Footer */}
+      <footer className="mt-16 border-t border-red-100 bg-white/70">
+        <div className="max-w-7xl mx-auto px-4 py-8 text-center text-sm text-gray-500">
+          <p className="text-red-700 font-serif font-bold text-base">🐴 恭喜发财 · Gong Xi Fa Cai 2026</p>
+          <p className="mt-1">Year of the Horse · {songs.filter(s => !s.id.startsWith('local-')).length} festive tracks · Instant digital downloads</p>
+          <p className="mt-2 text-xs text-gray-400">Demo storefront: card payments run on Stripe test mode and eWallet checkout is simulated — no real charges.</p>
+        </div>
+      </footer>
     </div>
   );
 }

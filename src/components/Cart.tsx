@@ -72,7 +72,7 @@ export const Cart: React.FC<CartProps> = ({ isOpen, onClose, items, onRemoveItem
               <p>MYR {total.toFixed(2)}</p>
             </div>
             <p className="mt-0.5 text-sm text-gray-500 mb-4">
-              Shipping and taxes calculated at checkout.
+              Instant digital delivery — download links are available right after payment.
             </p>
             <button
               onClick={onCheckout}

@@ -6,10 +6,13 @@ interface DownloadModalProps {
   isOpen: boolean;
   onClose: () => void;
   purchasedItems: CartItem[];
+  allSongs: Song[];
 }
 
-export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose, purchasedItems }) => {
+export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose, purchasedItems, allSongs }) => {
   if (!isOpen) return null;
+
+  const songsById = new Map(allSongs.map((s) => [s.id, s]));
 
   return (
     <div className="fixed inset-0 z-[70] overflow-y-auto">
@@ -34,7 +37,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose, p
                   <p className="text-sm text-gray-500 mb-4">
                     Thank you for your purchase! You can download your songs below.
                   </p>
-                  
+
                   <div className="space-y-4 max-h-[60vh] overflow-y-auto">
                     {purchasedItems.map((item, index) => (
                       <div key={`${item.type}-${item.item.id}-${index}`} className="border rounded-lg p-3 bg-gray-50">
@@ -54,10 +57,10 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose, p
                               <p className="text-xs text-gray-500">{item.item.artist}</p>
                             </div>
                           </div>
-                          
+
                           {item.type === 'song' ? (
-                            <a 
-                              href={(item.item as Song).audioUrl} 
+                            <a
+                              href={(item.item as Song).audioUrl}
                               download={`${item.item.title}.mp3`}
                               className="flex items-center space-x-1 bg-green-600 text-white px-3 py-1.5 rounded-md text-xs hover:bg-green-700 transition-colors"
                             >
@@ -70,20 +73,25 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose, p
                             </div>
                           )}
                         </div>
-                        
+
                         {item.type === 'album' && (
-                          <div className="mt-2 pl-11 space-y-2">
-                             {/* Note: In a real app we would resolve song IDs to objects here. 
-                                 For this mock, we assume album download is a zip or we list songs if available.
-                                 Since we only have IDs in album.songs, we can't easily list them without passing allSongs.
-                                 For now, let's show a placeholder for album download. 
-                             */}
-                             <button 
-                               disabled 
-                               className="text-xs text-gray-400 border border-gray-200 px-2 py-1 rounded flex items-center w-full justify-center"
-                             >
-                               Album download not available in demo
-                             </button>
+                          <div className="mt-2 pl-11 space-y-2 max-h-48 overflow-y-auto">
+                            {(item.item as Album).songs
+                              .map((id) => songsById.get(id))
+                              .filter((s): s is Song => Boolean(s))
+                              .map((song) => (
+                                <div key={song.id} className="flex items-center justify-between bg-white border border-gray-200 rounded px-2 py-1.5">
+                                  <span className="text-xs text-gray-700 truncate pr-2">{song.title}</span>
+                                  <a
+                                    href={song.audioUrl}
+                                    download={`${song.title}.mp3`}
+                                    className="flex items-center flex-shrink-0 text-xs text-green-700 hover:text-green-800 font-medium"
+                                  >
+                                    <Download size={12} className="mr-1" />
+                                    Save
+                                  </a>
+                                </div>
+                              ))}
                           </div>
                         )}
                       </div>

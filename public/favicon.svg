@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="30" fill="#DC2626"/>
+  <circle cx="32" cy="32" r="26" fill="none" stroke="#FACC15" stroke-width="3"/>
+  <text x="32" y="24" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#FDE68A" text-anchor="middle">福</text>
+  <text x="32" y="48" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2026</text>
+</svg>

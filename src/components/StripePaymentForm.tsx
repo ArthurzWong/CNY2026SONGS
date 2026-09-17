@@ -93,7 +93,7 @@ export const StripePaymentForm: React.FC<StripePaymentFormProps> = ({ amount, on
         className="w-full flex items-center justify-center px-4 py-3 border border-transparent rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:bg-indigo-400 disabled:cursor-not-allowed transition-colors"
       >
         <Lock className="w-4 h-4 mr-2" />
-        {processing ? 'Processing...' : `Pay $${amount.toFixed(2)}`}
+        {processing ? 'Processing...' : `Pay MYR ${amount.toFixed(2)}`}
       </button>
       
       <p className="mt-4 text-center text-xs text-gray-500 flex items-center justify-center">

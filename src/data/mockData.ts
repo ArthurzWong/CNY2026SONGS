@@ -7,31 +7,19 @@ export const albums: Album[] = [
     artist: 'CNY Stars',
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     price: 38.00,
-    audioUrl: '/songs/CNY2026AlbumMandarin.mp3',
-    songs: ['s1', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's10', 's11', 's12', 's13', 's14', 's15', 's16', 's17', 's18', 's19', 's20', 's21', 's22', 's23', 's24', 's25', 's26', 's27', 's28', 's29', 's30', 's31', 's32', 's33', 's34', 's35', 's36', 's37', 's38', 's39', 's40', 's41', 's42', 's43', 's44', 's45', 's46', 's47', 's48', 's49', 's50', 's51', 's52', 's53'],
-    description: 'The ultimate collection for the Year of the Horse 2026, featuring exclusive tracks for good luck and prosperity.'
+    songs: ['s2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's10', 's11', 's12', 's13', 's14', 's15', 's16', 's17', 's18', 's19', 's20', 's21', 's22', 's23', 's24', 's25', 's26', 's27', 's28', 's29', 's30', 's31', 's32', 's33', 's34', 's35', 's36', 's37', 's38', 's39', 's40', 's41', 's42', 's43', 's44', 's45', 's46', 's47', 's48', 's49', 's50', 's51', 's52', 's53'],
+    description: 'The ultimate collection for the Year of the Horse 2026, featuring 52 exclusive tracks for good luck and prosperity.'
   }
 ];
 
 export const songs: Song[] = [
   {
-    id: 's1',
-    title: "Full Album: CNY 2026 Mandarin Collection",
-    artist: 'CNY Stars',
-    albumId: 'a1',
-    mood: 'Celebratory',
-    duration: 180,
-    price: 38.0,
-    coverUrl: '/images/fire-horse-hero-v2.jpg',
-    audioUrl: '/songs/CNY2026AlbumMandarin.mp3'
-  },
-  {
     id: 's2',
     title: "Drums of Feng Yang",
     artist: 'CNY Stars',
     albumId: 'a1',
-    mood: 'Joyful',
-    duration: 180,
+    mood: 'Traditional',
+    duration: 161,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/Drums%20of%20Feng%20Yang.mp3'
@@ -42,7 +30,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Celebratory',
-    duration: 180,
+    duration: 151,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/Gong%20Xi%20Fa%20Cai%202026.mp3'
@@ -53,7 +41,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Celebratory',
-    duration: 180,
+    duration: 155,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/Gong%20Xi%20Gong%20Xi%2C%20All%20Night.mp3'
@@ -64,7 +52,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Celebratory',
-    duration: 180,
+    duration: 160,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/Gong%20Xi%2C%20Gong%20Xi%2C%20Ride.mp3'
@@ -75,7 +63,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 177,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/Horse%20Year%20Overture.mp3'
@@ -86,7 +74,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 163,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/Lanterns%20for%20the%20Galloping%20Year.mp3'
@@ -97,7 +85,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Energetic',
-    duration: 180,
+    duration: 116,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/Lion%20Dance%20Beats%20%28Year%20of%20the%20Horse%29.mp3'
@@ -108,7 +96,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Prosperous',
-    duration: 180,
+    duration: 98,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/Peach%20Blossom%20Horse%20Year.mp3'
@@ -119,7 +107,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Lucky',
-    duration: 180,
+    duration: 137,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/Prosperity%20Arrives%20%28Year%20of%20the%20Horse%29.mp3'
@@ -130,7 +118,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Prosperous',
-    duration: 180,
+    duration: 141,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/Spring%20Returns%20on%20Wild%20Horses.mp3'
@@ -141,7 +129,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 152,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E4%B8%87%E4%BA%8B%E4%BA%A8%E9%80%9A%E7%9A%84%E7%AC%91%E5%AE%B9.mp3'
@@ -151,8 +139,8 @@ export const songs: Song[] = [
     title: "\u5e74\u5e74\u56de\u5bb6\u8def",
     artist: 'CNY Stars',
     albumId: 'a1',
-    mood: 'Joyful',
-    duration: 180,
+    mood: 'Nostalgic',
+    duration: 218,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E5%B9%B4%E5%B9%B4%E5%9B%9E%E5%AE%B6%E8%B7%AF.mp3'
@@ -163,7 +151,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 166,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E5%B9%B4%E5%B9%B4%E6%9C%89%E4%BD%A0%E6%9D%A5%E8%AE%A8%E4%B8%AA%E5%A5%BD%E5%BD%A9%E5%A4%B4.mp3'
@@ -174,7 +162,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 117,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E5%B9%B4%E5%B9%B4%E6%9C%89%E4%BD%A0%E7%AC%91%E5%BC%80%E6%80%80.mp3'
@@ -185,7 +173,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 160,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E5%B9%B4%E5%B9%B4%E6%9C%89%E7%A6%8F%E7%AC%91%E5%BC%80%E9%A2%9C.mp3'
@@ -195,8 +183,8 @@ export const songs: Song[] = [
     title: "\u5e74\u5e74\u6709\u9980Flow",
     artist: 'CNY Stars',
     albumId: 'a1',
-    mood: 'Joyful',
-    duration: 180,
+    mood: 'Modern',
+    duration: 162,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E5%B9%B4%E5%B9%B4%E6%9C%89%E9%A6%80Flow.mp3'
@@ -207,7 +195,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 87,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E5%B9%B4%E5%B9%B4%E6%9C%89%E9%A6%80%E5%A5%BD%E9%A2%84%E5%85%86.mp3'
@@ -218,7 +206,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 154,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E6%81%AD%E5%96%9C%E5%8F%91%E8%B4%A2%20%E5%A4%A7%E5%90%89%E5%A4%A7%E5%88%A9%20%281%29.mp3'
@@ -229,7 +217,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 133,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E6%81%AD%E5%96%9C%E5%8F%91%E8%B4%A2%20%E5%A4%A7%E5%90%89%E5%A4%A7%E5%88%A9.mp3'
@@ -240,7 +228,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 153,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E6%81%AD%E5%96%9C%E5%8F%91%E8%B4%A22026.mp3'
@@ -251,7 +239,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 147,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E6%81%AD%E5%96%9C%E5%8F%91%E8%B4%A2%E5%B0%8F%E5%88%86%E9%98%9F.mp3'
@@ -262,7 +250,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 175,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E6%81%AD%E5%96%9C%E5%8F%91%E8%B4%A2%E8%BF%9B%E8%A1%8C%E6%9B%B2.mp3'
@@ -273,7 +261,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Energetic',
-    duration: 180,
+    duration: 141,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E6%81%AD%E5%96%9C%E6%81%AD%E5%96%9C%20BOYBAND%20REMIX.mp3'
@@ -284,7 +272,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 201,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E6%81%AD%E5%96%9C%E6%81%AD%E5%96%9CBoys.mp3'
@@ -295,7 +283,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 172,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E6%96%B0%E5%B9%B4%E5%90%89%E7%A5%A5%E9%A2%82.mp3'
@@ -305,8 +293,8 @@ export const songs: Song[] = [
     title: "\u65b0\u5e74\u6cd5\u8bed\u6b4c\u00b7\u597d\u8fd0\u6765\u6572\u95e8",
     artist: 'CNY Stars',
     albumId: 'a1',
-    mood: 'Joyful',
-    duration: 180,
+    mood: 'Modern',
+    duration: 185,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E6%96%B0%E5%B9%B4%E6%B3%95%E8%AF%AD%E6%AD%8C%C2%B7%E5%A5%BD%E8%BF%90%E6%9D%A5%E6%95%B2%E9%97%A8.mp3'
@@ -317,7 +305,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 159,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E6%96%B0%E5%B9%B4%E7%A6%8F%E5%88%B0%E7%9C%BC%E5%89%8D.mp3'
@@ -328,7 +316,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 139,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E7%A6%8F%E5%88%B0%E7%9C%BC%E5%89%8D%20%281%29.mp3'
@@ -339,7 +327,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 134,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E7%A6%8F%E5%88%B0%E7%9C%BC%E5%89%8D.mp3'
@@ -350,7 +338,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 129,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E7%A6%8F%E5%88%B0%E7%9C%BC%E5%89%8D%E6%81%AD%E5%96%9C%E4%BD%A0.mp3'
@@ -361,7 +349,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 154,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E7%A6%8F%E5%88%B0%E7%9C%BC%E5%89%8D%E7%AC%91%E5%93%88%E5%93%88.mp3'
@@ -372,7 +360,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 176,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E7%A6%8F%E5%88%B0%E7%9C%BC%E5%89%8D%E7%AC%91%E5%BC%80%E6%80%80.mp3'
@@ -383,7 +371,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 198,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E8%B4%A2%E6%BA%90%E5%B9%BF%E8%BF%9B%20%E5%85%AB%E6%96%B9%E6%9D%A5%E8%B4%A2%20%281%29.mp3'
@@ -394,7 +382,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 165,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E8%B4%A2%E6%BA%90%E5%B9%BF%E8%BF%9B%20%E5%85%AB%E6%96%B9%E6%9D%A5%E8%B4%A2.mp3'
@@ -405,7 +393,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 186,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%87%91%E9%A2%A8%E9%80%81%E5%96%9C%E7%AC%91%E9%96%8B%E6%87%B7.mp3'
@@ -416,7 +404,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 140,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E5%B9%B4%E5%A4%A7%E5%90%89%20%282%29.mp3'
@@ -427,7 +415,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Lucky',
-    duration: 180,
+    duration: 140,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E5%B9%B4%E5%A4%A7%E5%90%89%20168.mp3'
@@ -438,7 +426,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 165,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E5%B9%B4%E5%A4%A7%E5%90%89.mp3'
@@ -449,7 +437,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 98,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E5%B9%B4%E5%A5%BD%E9%81%8B%20%281%29.mp3'
@@ -460,7 +448,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 98,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E5%B9%B4%E5%A5%BD%E9%81%8B.mp3'
@@ -471,7 +459,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 134,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E7%A6%8F%E6%BB%BF%E9%96%80%20%281%29.mp3'
@@ -482,7 +470,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 120,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E7%A6%8F%E6%BB%BF%E9%96%80%20%282%29.mp3'
@@ -493,7 +481,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 103,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E7%A6%8F%E6%BB%BF%E9%96%80%20%283%29.mp3'
@@ -504,7 +492,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 70,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E7%A6%8F%E6%BB%BF%E9%96%80%20%284%29.mp3'
@@ -515,7 +503,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 79,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E7%A6%8F%E6%BB%BF%E9%96%80%20%285%29.mp3'
@@ -526,7 +514,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 128,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E7%A6%8F%E6%BB%BF%E9%96%80%20%286%29.mp3'
@@ -537,7 +525,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Lucky',
-    duration: 180,
+    duration: 79,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E7%A6%8F%E6%BB%BF%E9%96%80%20168.mp3'
@@ -548,7 +536,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 107,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A6%AC%E7%A6%8F%E6%BB%BF%E9%96%80.mp3'
@@ -559,7 +547,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 164,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A7%BF%E9%A6%AC%E8%BF%8E%E6%96%B0%E6%98%A5%20%281%29.mp3'
@@ -570,7 +558,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 122,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A7%BF%E9%A6%AC%E8%BF%8E%E6%96%B0%E6%98%A5.mp3'
@@ -581,7 +569,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 125,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A7%BF%E9%A6%AC%E8%BF%8E%E6%98%A5%E5%A5%BD%E9%81%8B%E4%BE%86.mp3'
@@ -592,7 +580,7 @@ export const songs: Song[] = [
     artist: 'CNY Stars',
     albumId: 'a1',
     mood: 'Joyful',
-    duration: 180,
+    duration: 174,
     price: 2.0,
     coverUrl: '/images/fire-horse-hero-v2.jpg',
     audioUrl: '/songs/%E9%A7%BF%E9%A6%AC%E8%BF%8E%E6%98%A5%E7%A6%8F%E6%BB%BF%E9%96%80.mp3'

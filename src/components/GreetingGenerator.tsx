@@ -58,15 +58,40 @@ export const GreetingGenerator: React.FC = () => {
       // Add text
       ctx.fillStyle = '#FFFFFF';
       ctx.textAlign = 'center';
-      
-      // Message
-      ctx.font = 'bold 48px serif';
-      ctx.fillText(message, 400, 300);
+
+      // Wrap the message into lines that fit the canvas
+      const wrapText = (text: string, font: string, maxWidth: number): string[] => {
+        ctx.font = font;
+        const lines: string[] = [];
+        for (const rawLine of text.split('\n')) {
+          let current = '';
+          for (const char of rawLine) {
+            const test = current + char;
+            if (ctx.measureText(test).width > maxWidth && current) {
+              lines.push(current);
+              current = char;
+            } else {
+              current = test;
+            }
+          }
+          lines.push(current);
+        }
+        return lines;
+      };
+
+      const messageFont = 'bold 44px serif';
+      const messageLines = wrapText(message || ' ', messageFont, 660);
+      const lineHeight = 56;
+      const startY = 300 - ((messageLines.length - 1) * lineHeight) / 2;
+      messageLines.forEach((line, i) => {
+        ctx.font = messageFont;
+        ctx.fillText(line, 400, startY + i * lineHeight);
+      });
 
       // Sender
       if (sender) {
         ctx.font = 'italic 32px serif';
-        ctx.fillText(`From: ${sender}`, 400, 380);
+        ctx.fillText(`From: ${sender}`, 400, Math.min(startY + messageLines.length * lineHeight + 20, 420));
       }
 
       // Year
